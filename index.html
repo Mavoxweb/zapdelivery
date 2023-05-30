@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+    <script defer src="script.js"></script>
+    <title>Zap Delivery</title>
+</head>
+<body>
+   
+        
+ <section class="header">
+        <div class="logo-header">
+            <img src="./img/logo.png" alt="logo do header food">
+            <h2>Zap Delivery</h2>
+        </div>
+        
+    </section> 
+
+    <section class="banner-promo">
+        <img src="./img/banner-promo.jpeg" alt="banner01promo">
+    </section>
+
+    <section class="about">
+        <h2>Bem-vindo à Zap Delivery</h2>
+        <p>Nessa pagina você pode efetuar e montar seu pedido conforme desejar com as opçãos e definir
+             a forma de pagamento diretamente no whatsapp.<br>Após enviar as informaçōes um de nossos 
+             atentendes lhe mandará a confirmação do pedido, após a confirmação basta aguradar a entrega.</p>
+    </section>
+
+    
+
+    <section class="cardapio">
+        <h2>1. Identidique-se: </h2>
+
+        <section class="client">
+            <form action="">
+                <input id="nome" type="text" placeholder="Nome Completo:">
+                <input id="phone" type="text" placeholder="Telefone:">
+                <input id="adress1" type="text" placeholder="Endereço:">
+                <input id="adress2" type="text" placeholder="Complemento:">
+                <input id="ponto" type="text" placeholder="Ponto de Referencia:">
+                <input id="cep" type="text" placeholder="CEP:">
+            </form>
+        </section>
+
+        <h2>2. Escolha seu Pedido:</h2>
+
+        <div id="101" class="food-card">
+            <img class="tumbnail" src="./img/tumb-hamburguer.jpeg" alt="foto do prato de comida">
+            <div class="info">
+                <h3 class="headline-food">Hamburguer</h3>
+                <p class="description">Pão com gergilim, hamburguer bovino, queijo, alface, tomete, maionese artesanal. </p>
+                    <div class="preco">
+                        <h4 class="simbol">R$<h4 class="valor">16.90</h4></h4>
+                    </div>
+            </div>
+            <button class="addtocart"> + Adiconar ao Pedido</button>
+        </div>
+
+        <div id="102" class="food-card">
+            <img class="tumbnail" src="./img/tumb-hamburguer.jpeg" alt="foto do prato de comida">
+            <div class="info">
+                <h3 class="headline-food">X-Bacon</h3>
+                <p class="description">Pão com gergilim, 2 hamburguer bovino, Bacon, queijo cheddar, maionese artesanal, cebola crispy.</p>
+                <div class="preco">
+                    <h4 class="simbol">R$<h4 class="valor">22.00</h4></h4>
+                </div>
+            </div>
+            <button class="addtocart"> + Adiconar ao Pedido</button>
+        </div>
+
+        <div id="103" class="food-card">
+            <img class="tumbnail" src="./img/tumb-hamburguer.jpeg" alt="foto do prato de comida">
+            <div class="info">
+                <h3 class="headline-food">X-Quarteirão</h3>
+                <p class="description">Pão com gergilim, hamburguer bovino, picles, queijo cheddar, molho vinagrete.</p>
+                <div class="preco">
+                    <h4 class="simbol">R$<h4 class="valor">19.90</h4></h4>
+                </div>
+            </div>
+            <button class="addtocart"> + Adiconar ao Pedido</button>
+        </div>
+
+        <h2>3. Escolha sua Bebida:</h2>
+
+        <div id="201" class="food-card">
+            <img class="tumbnail" src="./img/coca-cola-lata.jpeg" alt="foto do prato de comida">
+            <div class="info">
+                <h3 class="headline-food">Coca-cola em Lata 350ml</h3>
+                <p class="description">Descrição da comida como ela é feita e  oque acompanha</p>
+                <div class="preco">
+                    <h4 class="simbol">R$<h4 class="valor">6.00</h4></h4>
+                </div>
+            </div>
+            <button class="addtocart"> + Adiconar ao Pedido</button>
+        </div>
+
+        <div id="202" class="food-card">
+            <img class="tumbnail" src="./img/fanta=lata.jpeg" alt="foto do prato de comida">
+            <div class="info">
+                <h3 class="headline-food">Fanta laranja em Lata 350ml</h3>
+                <p class="description">Descrição da comida como ela é feita e  oque acompanha</p>
+                <div class="preco">
+                    <h4 class="simbol">R$<h4 class="valor">5.00</h4></h4>
+                </div>
+            </div>
+            <button class="addtocart"> + Adiconar ao Pedido</button>
+        </div>
+
+        <div id="203" class="food-card">
+            <img class="tumbnail" src="./img/guarana-lata.webp" alt="foto do prato de comida">
+            <div class="info">
+                <h3 class="headline-food">Guaraná Antartica em Lata 350ml</h3>
+                <p class="description">Descrição da comida como ela é feita e  oque acompanha</p>
+                <div class="preco">
+                    <h4 class="simbol">R$<h4 class="valor">5.00</h4></h4>
+                </div>
+            </div>
+            <button class="addtocart"> + Adiconar ao Pedido</button>
+        </div>
+
+        <section class="payment-options">
+            <h2>4. Formas de Pagamento:</h2>
+
+            <div id="payment" class="checkbox-group">
+                <input type="checkbox" id="dinheiro" name="payment" value="dinheiro">
+                <label for="dinheiro">Dinheiro</label>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="debito" name="payment" value="debito">
+                <label for="debito">Cartão de Débito</label>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="credito" name="payment" value="credito">
+                <label for="credito">Cartão de Crédito</label>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="pix" name="payment" value="pix">
+                <label for="pix">PIX</label>
+            </div>
+
+        </section>
+        
+
+    </section>
+
+    <section class="cart">
+        <h2>Finalização do Pedido:</h2>
+        <div id="cart-items"></div>
+        <div id="cart-total">Total: R$ <span id="cart-total-amount">0.00</span></div>
+        <button id="checkout-btn">Finalizar Pedido</button>
+    </section>
+
+<footer>
+    <div class="conteiner-footer">
+        <h2>Zap Delivery</h2>
+        <p>O sistema javascript para receber pedidos no seu WhatsApp</p>
+    </div>
+    <div class="direitos">
+        <p>Todos os direitos reservados à Alex Marques.</p>
+    </div>
+</footer>
+
+
+    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.js"></script>
+</body>
+</html>

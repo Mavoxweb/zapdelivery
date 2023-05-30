@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+.red-custom { color: #F23005}
+.white-custom { color:#fff}
+.yellow-custom { color: #F2CB05;}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: auto;
+    background-color: #F23005;
+}
+
+.logo-header img {
+    width: 20%;
+    margin: 5px;
+    padding: 2px;
+}
+
+.logo-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 160px;
+    color: #ffffff;
+}
+
+.logo-header h2 {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu-desktop {
+    margin-right: 160px;
+}
+
+.menu-desktop ul {
+    list-style-type: none;
+    display: flex; 
+    flex-direction: row; 
+}
+
+.menu-desktop ul li a {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    gap: 20px;
+}
+
+.menu-desktop a {
+    margin-right: 25px;
+}
+
+.menu-desktop a:hover {
+    color: #F2CB05;
+}
+
+.banner-promo img {
+    width: 100%;
+    justify-content: center;
+}
+
+.about {
+    margin: 20px 0;
+    text-align: center;
+    align-items: center;
+}
+
+.about h2 {
+    font-size: 35px;
+
+}
+
+.about p {
+    margin-top: 18px;
+    padding: 0 165px;
+}
+
+.client {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+.client form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client input[type="text"] {
+    margin: 10px;
+    padding: 5px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.client input[type="text"]:focus {
+    outline: none;
+    border-color: #F23005;
+}
+
+
+.cardapio {
+    background-color: rgb(225, 225, 225);
+    padding: 50px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardapio h2 {
+    font-size: 35px;
+}
+
+.food-card {
+    display: flex; /* adicionado */
+    justify-content: center; /* adicionado */
+    align-items: center; /* adicionado */
+    text-align: center;
+    margin: 10px 30px;
+    height: 210px;
+    width: 65%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.headline-food {
+    font-size: 25px;
+    margin: 10px 60px;
+}
+
+.description {
+    
+    font-size: 13px;
+    color: rgb(108, 108, 108);
+    margin: 10px 60px;
+    
+}
+
+.food-card img {
+    width: 20%;
+    border-radius: 10px;
+    margin: 10px 15px;
+}
+
+.preco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preco h4 {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.addtocart {
+    cursor: pointer;
+    margin-right: 15px;
+    padding: 10px 3px;
+    height: auto;
+    width: 250px;
+    color: white;
+    background-color: #F23005;
+    border: none;
+    border-radius: 10px;
+}
+
+.addtocart:hover {
+    color: black;
+    background-color: #F2CB05;
+}
+
+.payment-options {
+    margin-top: 20px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.checkbox-group label {
+    font-weight: 500;
+}
+
+
+
+.cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 40px 260px;
+  }
+  
+  .cart h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #cart-items {
+    margin-bottom: 10px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  #cart-total {
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  #checkout-btn {
+    background-color: #f23005;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  #checkout-btn:hover {
+    background-color: #d71700;
+  }
+  
+  
+span {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+ 
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 40%;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    opacity: 0;
+    animation: fade-in 0.3s forwards;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-out {
+    animation: fade-out 0.8s forwards;
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+.conteiner-footer{
+    width: auto;
+    height: auto;
+    padding: 10px 40px;
+    background-color: #d71700;
+    color: #ffffff;
+}
+.conteiner-footer h2 { font-weight: 700;}
+.conteiner-footer p {
+    font-size: 12px;
+}
+
+.direitos {
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 200;
+    font-size: 12px;
+    margin-bottom: -30px;
+}
+
+/* Regras de mídia para telas menores */
+
+@media screen and (max-width: 768px) {
+    .cardapio h2 {
+        font-size: 28px;
+    }
+
+    .logo-header {
+      margin-left: 20px;
+    }
+  
+    .menu-desktop {
+      display: none;
+      
+    }
+  
+    .about p {
+        padding: 16px;
+    }
+
+    .client input[type="text"] {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .cardapio {
+      padding: 20px;
+    }
+  
+    .food-card {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 10px 5px;
+        padding: 20px;
+        height: auto;
+        width: auto;
+        background-color: white;
+        border-radius: 25px;
+    }
+  
+    .headline-food,
+    .description {
+      margin: 10px 20px;
+    }
+  
+    .cart {
+      margin: 20px;
+    }
+
+    .cart-item {
+        display: block;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+
+  }

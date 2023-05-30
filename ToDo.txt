@@ -1,0 +1,108 @@
+
+
+fazer o pedido
+campos de identificao do cliente
+Nome completo:
+Telefone:
+Endereco:
+complemento:
+Ponto de referencia:
+
+
+Cardapio: //usar os Id's para organizar os produtos do cardapio no carrinho. Feito
+
+    cards para o cliente adcionar ao carrinho as opcoes{
+        ID>imagem > Headline > description > Valor > Button de AddToCart
+    }
+
+    cards de bebidas {
+        ID>imagem > Headline > description > Valor > Button de AddToCart
+    }
+
+    cards de combos {
+        ID>imagem > Headline > description > Valor > Button de AddToCart
+    }
+
+
+Carrinho de pedidos:
+    agrupador das informacoes do cliente ok
+
+
+
+
+opcoes de formas de pagamento
+    dinheiro{
+        total
+        precisa de troco?
+        para quanto?
+        desconto
+    }
+    
+    cartao {
+        Debito, credito ou ticket
+        qual bandeira?
+        Total
+
+    }
+    PIX {
+        desconto
+        Total
+        Gerar a chave pix para o cliente
+        mande o comprovante para nosso restaurante
+    }
+
+
+Button de finalizacao de pedido
+    como deve ir a mensagem para o restaurante {
+        Olá ZapDelivey, gostaria de fazer o meu pedido por favor. 
+        Detalhes do cliente:
+            Nome:
+            Endereco:
+            Complemento:
+            Ponto de referencia:
+            telefone: 
+
+        Detalhe do meu Pedido:
+            1x Hamburguer
+            1x X-Bacon
+            1x X-bacon obs: sem cebola.
+            1x cocacola em lata
+            1x fanta laranja em lata
+
+        Forma de entrega: 
+            receber em Casa
+        
+        Total do Pedido: R$ 95.60
+
+        Forma de Pagamento:
+            Dinheiro
+            Precisa de troco?
+            Sim
+            Para quanto?
+            R$100.00
+
+        Aguardo a sua confirmacao que o pedido foi aceito?
+        }
+
+Logica Basica do sistema JS
+
+extraimos as inforamacoes do cliente salvamos para mandar a msg ao restaurante
+
+categorizamos as comidas e bebidas com ids
+
+coletamos dos ids as headline para montar o carrinho
+
+coletamos o valor para somar ao carrinho
+
+somamos a taxa de entrega
+
+selecionamos as formas de pagamento dados pelo usuario:
+
+    > compilamos todas as informacoes em lista 
+    > convertemos os para texto suportado e organizado para whatsapp
+    > mostramos numa tela a confirmacao dos dados e pedido do cliente 
+    > convertemos em um link de disparo formatado 
+    > com um butao de confirmacoa disparamos para um numero preselecionado do restaurante 
+
+//Devemos ter uma funcao de remover item do carrinho
+//funcao de voltar a edicao do carrinho para corrigir dados do cliente ou quantidade de comida.

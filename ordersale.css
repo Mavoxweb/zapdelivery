@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: auto;
+    background-color: #F23005;
+}
+
+.logo-header img {
+    width: 30%;
+    margin: 5px;
+    padding: 2px;
+}
+
+.logo-header {
+    margin-left: 160px;
+}
+
+.menu-desktop {
+    margin-right: 160px;
+}
+
+.menu-desktop ul {
+    list-style-type: none;
+    display: flex; 
+    flex-direction: row; 
+}
+
+.menu-desktop ul li a {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    gap: 20px;
+}
+
+.menu-desktop a {
+    margin-right: 25px;
+}
+
+.menu-desktop a:hover {
+    color: #F2CB05;
+}
+
+.resumo {
+    height: auto;
+    width: auto;
+    background-color: rgba(215, 215, 215, 0.923);
+    border-radius: 25px;
+    margin: 50px 35%;
+    padding: 25px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #f23005;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d71700;
+}
+
+.cart-item img {
+    display: none;
+  }
+
+.cart-item span {
+    margin-right:5px ;
+}
+
+.cart-item button {
+    display: none;
+}
